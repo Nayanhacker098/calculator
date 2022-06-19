@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="heading">NAYAN'S CALCULATOR</h1>
+      <div class="calculator">
+        <div class="history">
+          <i class="fa-solid fa-arrow-left back"></i>
+          <h5>History :</h5>
+          <div id="saveHis"></div>
+        </div>
+        <div class="output">
+          <div class="icon">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <input type="text" class="previous" value="" disabled />
+          </div>
+          <input type="text" class="current" value="0" id="input" disabled />
+        </div>
+        <div class="row">
+          <button class="clear cal-btn">AC</button>
+          <button class="col cal-btn" id="delete">DEL</button>
+          <button class="col cal-btn" onclick="getVal('/')">&#xF7;</button>
+          <button class="col cal-btn" onclick="getVal('1')" value="1">1</button>
+          <button class="col cal-btn" onclick="getVal('2')" value="2">2</button>
+          <button class="col cal-btn" onclick="getVal('3')" value="3">3</button>
+          <button class="col cal-btn" onclick="getVal('*')" value="*">*</button>
+          <button class="col cal-btn" onclick="getVal('4')" value="4">4</button>
+          <button class="col cal-btn" onclick="getVal('5')" value="5">5</button>
+          <button class="col cal-btn" onclick="getVal('6')" value="6">6</button>
+          <button class="col cal-btn" onclick="getVal('+')" value="+">+</button>
+          <button class="col cal-btn" onclick="getVal('7')" value="7">7</button>
+          <button class="col cal-btn" onclick="getVal('8')" value="8">8</button>
+          <button class="col cal-btn" onclick="getVal('9')" value="9">9</button>
+          <button class="col cal-btn" onclick="getVal('-')" value="-">-</button>
+          <button class="col cal-btn" onclick="getVal('.')" value=".">.</button>
+          <button class="col cal-btn" onclick="getVal('0')" value="0">0</button>
+          <button class="equal cal-btn">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
